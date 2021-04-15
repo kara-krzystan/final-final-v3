@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import Add from './pages/Add';
+import Search from './pages/Search';
 import SingleRecipe from './pages/SingleRecipe';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
@@ -39,6 +40,7 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
               <Route exact path="/add" component={Add} />
+              <Route exact path="/search" component={Search} />
               <Route exact path="/profile/:username?" component={Profile} />
               <Route exact path="/recipe/:id" component={SingleRecipe} />
 
