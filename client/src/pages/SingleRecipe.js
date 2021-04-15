@@ -22,8 +22,8 @@ const SingleRecipe = props => {
       <div className="card mb-3">
         <p className="card-header">
           <span style={{ fontWeight: 700 }} className="text-light">
-            Username
-          </span>{' '}
+          {recipe.username}
+          </span>{" "}
         </p>
         <div className="card-body">
           <p>{recipe.recipeText}</p>

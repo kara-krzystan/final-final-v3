@@ -5,7 +5,7 @@ import { ADD_RECIPE } from '../../utils/mutations';
 import { QUERY_RECIPES, QUERY_ME } from '../../utils/queries';
 
 const RecipeForm = () => {
-  const [recipeText, setText] = useState('');
+  const [recipeText, setText] = useState("");
 
   const [addRecipe] = useMutation(ADD_RECIPE, {
     update(cache, { data: { addRecipe } }) {
@@ -51,12 +51,12 @@ const RecipeForm = () => {
         className="flex-row justify-center justify-space-between-md align-stretch"
         onSubmit={handleFormSubmit}
       >
-        <input
+        <textarea
           placeholder="Enter recipe here"
           value={recipeText}
           className="form-input col-12 col-md-9"
           onChange={handleChange}
-        ></input>
+        ></textarea>
         <button className="btn col-12 col-md-3" type="submit">
           Submit
         </button>
