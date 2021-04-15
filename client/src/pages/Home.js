@@ -1,6 +1,5 @@
 import React from 'react';
 import RecipeList from '../components/RecipeList';
-import RecipeForm from '../components/RecipeForm';
 
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
@@ -15,16 +14,11 @@ const Home = () => {
   return (
     <main>
       <div className="flex-row justify-space-between">
-        {loggedIn && (
-          <div className="col-12 mb-3">
-            <RecipeForm />
-          </div>
-        )}
         <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <RecipeList recipes={recipes} title="Newest recipes!" />
+            <RecipeList recipes={recipes} title="" />
           )}
         </div>
       </div>

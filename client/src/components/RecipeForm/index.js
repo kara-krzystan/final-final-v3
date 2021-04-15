@@ -46,22 +46,28 @@ const RecipeForm = () => {
   };
 
   return (
-    <div>
+    <main className='flex-row justify-center mb-4'>
+      <div className='col-12 col-md-9'>
+        <div className='card'>
+          <h4 className='card-header'>Add to the Cookbook</h4>
+          <div className='card-body'>
       <form
         className="flex-row justify-center justify-space-between-md align-stretch"
-        onSubmit={handleFormSubmit}
-      >
+        onSubmit={handleFormSubmit}>
         <textarea
-          placeholder="Enter recipe here"
+          placeholder="Recipe Text"
           value={recipeText}
-          className="form-input col-12 col-md-9"
+          className="form-input-recipe w-100"
           onChange={handleChange}
         ></textarea>
-        <button className="btn col-12 col-md-3" type="submit">
+        <button className="btn d-block w-100" type="submit">
           Submit
         </button>
       </form>
     </div>
+    </div>
+      </div>
+    </main>
   );
 };
 

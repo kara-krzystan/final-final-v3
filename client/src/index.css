@@ -1,11 +1,11 @@
 :root {
-  --primary: #497573;
-  --secondary: #99f7f2;
+  --primary: #9c9c9c;
+  --secondary: #eefffe;
   --tertiary: #b2c2c1;
   --quatrinary: #cadbda;
-  --light: #e1f5f4;
-  --dark: #6c7575;
-  --error: rgb(228, 46, 1);
+  --light: #f5f5f5;
+  --dark: #010101;
+  --error: rgb(224, 105, 75);
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
   --spacing-two: calc(1rem * 0.5);
@@ -26,7 +26,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
   line-height: 1.5;
   font-size: 20px;
@@ -40,18 +40,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Karla', sans-serif;
-  font-weight: 700;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
 }
 
 h1 {
-  font-size: 2.25rem;
+  letter-spacing: .2rem;
+  font-size: 4rem;
+  font-weight: semi-bold;
+  font-family: 'DM Serif Display', serif;
 }
 
 h2 {
   font-size: 2rem;
+  font-family: 'DM Serif Display', serif;
 }
 
 h3 {
@@ -117,7 +121,7 @@ nav a:hover {
   border: none;
   color: var(--dark);
   outline: none;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   transition: all 0.5s;
 }
 
@@ -142,6 +146,9 @@ nav a:hover {
 
 .card-header {
   color: var(--secondary);
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  letter-spacing: .1rem;
   margin: 0;
   background-color: var(--dark);
   padding: 0.625rem;
@@ -166,6 +173,24 @@ nav a:hover {
 }
 
 .form-input {
+  width: 100%;
+
+  padding: 0.75rem;
+  margin: 0.2rem 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--dark);
+  border-radius: var(--border-radius);
+}
+.form-input-recipe {
+  width: 100%;
+  height: 25rem;
+  padding: 0.75rem;
+  margin: 0.2rem 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--dark);
+  border-radius: var(--border-radius);
+}
+.form-input-title {
   width: 100%;
   padding: 0.75rem;
   margin: 0.2rem 0;
