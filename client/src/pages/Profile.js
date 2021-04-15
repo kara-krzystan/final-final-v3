@@ -4,7 +4,7 @@ import { Redirect, useParams } from 'react-router-dom';
 import RecipeForm from '../components/RecipeForm';
 import RecipeList from '../components/RecipeList';
 
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import Auth from '../utils/auth';
 

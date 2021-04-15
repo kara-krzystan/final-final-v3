@@ -3,7 +3,7 @@ import RecipeList from '../components/RecipeList';
 import RecipeForm from '../components/RecipeForm';
 
 import Auth from '../utils/auth';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 import { QUERY_RECIPES } from '../utils/queries';
 
 const Home = () => {

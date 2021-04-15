@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { ADD_RECIPE } from '../../utils/mutations';
 import { QUERY_RECIPES, QUERY_ME } from '../../utils/queries';
 
@@ -28,9 +28,7 @@ const RecipeForm = () => {
   });
 
   const handleChange = event => {
-    if (event.target.value.length <= 5000) {
-      setText(event.target.value);
-    }
+    setText(event.target.value);
   };
 
   const handleFormSubmit = async event => {
@@ -53,12 +51,12 @@ const RecipeForm = () => {
         className="flex-row justify-center justify-space-between-md align-stretch"
         onSubmit={handleFormSubmit}
       >
-        <textarea
+        <input
           placeholder="Enter recipe here"
           value={recipeText}
           className="form-input col-12 col-md-9"
           onChange={handleChange}
-        ></textarea>
+        ></input>
         <button className="btn col-12 col-md-3" type="submit">
           Submit
         </button>
