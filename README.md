@@ -17,7 +17,7 @@ SO THAT we can begin to build a digital recipe collection for generations to com
 
 ## Website Link
 
-Check it out live!
+Check it out!
 [The Family Cookbook](https://radiant-scrubland-03545.herokuapp.com/)
 
 ## Screenshot
